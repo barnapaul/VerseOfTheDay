@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-    
+
     <link rel="stylesheet" href="http://juanvargas.net/Unsplash/css/style.css">
-    
+
     <link rel="manifest" href="manifest.json">
 
+    <link rel="stylesheet" type="text/css" href="slick/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/js/javascript.js" />
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -26,20 +28,42 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container ">
         <i class="fa fa-pinterest-p" aria-hidden="true"></i>
         <span style="position: absolute; z-index: 9999999;  font-family: times, Times New Roman, times-roman, georgia, serif; line-height: 50px; text-transform: uppercase;  color: #ffffff; width: 600px; margin-left:  20%; margin-top: 20%; font-size: 30px; " id="scripture"></span>
-        <div>
-            <img id="image" src="https://source.unsplash.com/user/lucabravo/1100x600" alt="unsplash">
-            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        <div class="single-item">
+            <div>
+                <img id="image" src="https://source.unsplash.com/user/lucabravo/1100x600" alt="unsplash">
+            </div>
+            <div>
+                <img id="image" src="https://source.unsplash.com/user/sgabriel/1100x600" alt="unsplash">
+            </div>
+            <div>
+                <img id="image" src="https://source.unsplash.com/user/montylov/1100x600" alt="unsplash">
+            </div>
+            <div>
+                <img id="image" src="https://source.unsplash.com/user/von_co/1100x600" alt="unsplash">
+            </div>
         </div>
-        
+
 
     </div>
 </body>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/js/slick.min.js"></script>
 
 <script type="text/javascript" src="bootstrap/js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.single-item').slick({
+            nextArrow: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
+            prevArrow: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
+        });
+    });
+</script>
+
 
 </html>
